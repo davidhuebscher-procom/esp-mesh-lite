@@ -7,7 +7,10 @@ issues: https://github.com/espressif/esp-mesh-lite/issues
 dependencies:
   idf: ">=5.0"
   espressif/qrcode: "^0.1.0"
-  espressif/iot_bridge: "1.0.1"
+  espressif/iot_bridge:
+    git: https://github.com/davidhuebscher-procom/esp-iot-bridge.git
+    path: components/iot_bridge
+    version: 4f308828ec46d5fb94f8f92e3895ad83a938d51d
   espressif/cmake_utilities: 0.*
 examples:
   - path: ../../examples/mesh_local_control
